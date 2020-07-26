@@ -24,8 +24,13 @@ public class RazeCore {
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
     }
     
-    /// The mpst eye pleasing color known by humanity
+    /// The most eye-pleasing color known to humanity
     public static var razeColor: UIColor {
         return colorFromHexString("006736")
+    }
+    
+    /// Returns an object of `UIColor` with the second most eye-pleasing color known to humanity
+    public static var secondaryRazeColor: UIColor {
+        return colorFromHexString("FCFFFD")
     }
 }
