@@ -21,9 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_23 /* RazeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* RazeCore.swift */; };
+		C3B6378824CF367B00ACDB41 /* RazeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6378724CF367B00ACDB41 /* RazeCore.swift */; };
+		C3B6378A24CF371200ACDB41 /* RazeNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6378924CF371200ACDB41 /* RazeNetworkingTests.swift */; };
+		C3B6378C24CF37A400ACDB41 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6378B24CF37A400ACDB41 /* Networking.swift */; };
+		OBJ_23 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Color.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_41 /* RazeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RazeCoreTests.swift */; };
+		OBJ_41 /* RazeColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RazeColorTests.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_44 /* RazeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RazeCore::RazeCore::Product" /* RazeCore.framework */; };
 /* End PBXBuildFile section */
@@ -36,14 +39,24 @@
 			remoteGlobalIDString = "RazeCore::RazeCore";
 			remoteInfo = RazeCore;
 		};
+		C3B6378624CDBF7600ACDB41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "RazeCore::RazeCoreTests";
+			remoteInfo = RazeCoreTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		OBJ_12 /* RazeCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeCoreTests.swift; sourceTree = "<group>"; };
+		C3B6378724CF367B00ACDB41 /* RazeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeCore.swift; sourceTree = "<group>"; };
+		C3B6378924CF371200ACDB41 /* RazeNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeNetworkingTests.swift; sourceTree = "<group>"; };
+		C3B6378B24CF37A400ACDB41 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		OBJ_12 /* RazeColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeColorTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* RazeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeCore.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		"RazeCore::RazeCore::Product" /* RazeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RazeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"RazeCore::RazeCoreTests::Product" /* RazeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RazeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,8 +91,9 @@
 		OBJ_11 /* RazeCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* RazeCoreTests.swift */,
+				OBJ_12 /* RazeColorTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
+				C3B6378924CF371200ACDB41 /* RazeNetworkingTests.swift */,
 			);
 			name = RazeCoreTests;
 			path = Tests/RazeCoreTests;
@@ -117,7 +131,9 @@
 		OBJ_8 /* RazeCore */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* RazeCore.swift */,
+				OBJ_9 /* Color.swift */,
+				C3B6378724CF367B00ACDB41 /* RazeCore.swift */,
+				C3B6378B24CF37A400ACDB41 /* Networking.swift */,
 			);
 			name = RazeCore;
 			path = Sources/RazeCore;
@@ -207,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_23 /* RazeCore.swift in Sources */,
+				C3B6378C24CF37A400ACDB41 /* Networking.swift in Sources */,
+				C3B6378824CF367B00ACDB41 /* RazeCore.swift in Sources */,
+				OBJ_23 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_41 /* RazeCoreTests.swift in Sources */,
+				OBJ_41 /* RazeColorTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
+				C3B6378A24CF371200ACDB41 /* RazeNetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +253,7 @@
 		OBJ_35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "RazeCore::RazeCoreTests" /* RazeCoreTests */;
-			targetProxy = "RazeCore::RazeCoreTests" /* RazeCoreTests */;
+			targetProxy = C3B6378624CDBF7600ACDB41 /* PBXContainerItemProxy */;
 		};
 		OBJ_45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
